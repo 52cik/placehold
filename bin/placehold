@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const http = require('http');
+const placehold = require('..');
+
+const PORT = process.env.PORT || 9191;
+
+const app = http.createServer(placehold);
+
+app.listen(PORT, _ => {
+  console.log(`Server running at http://localhost:${PORT}/`);
+});
