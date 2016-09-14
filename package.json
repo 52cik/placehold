@@ -7,7 +7,8 @@
     "placehold": "bin/placehold"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --check-leaks --reporter spec --bail",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/52cik/node-placehold/issues"
   },
-  "homepage": "https://github.com/52cik/node-placehold#readme"
+  "homepage": "https://github.com/52cik/node-placehold#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
+  }
 }
