@@ -9,6 +9,7 @@
 [![node][node-image]][node-url]
 [![license MIT][license-image]][license-url]
 
+
 ## How to use it
 
 ``` sh
@@ -30,10 +31,11 @@ $ PORT=1234 placehold
 > placehold
 ```
 
+
 ### Format
 
 ```
-<http://localhost:9191/[size][/bgcolor][/color][?text=test]>
+http://localhost:9191/[size][/bgcolor][/color][?text=test]
 ```
 
 * **size** - 200 or 200x100 to set the width and height.
@@ -41,17 +43,17 @@ $ PORT=1234 placehold
 * **color** - The CSS color property.
 * **text** - The text information.
 
+
 ### Examples
 
-```
-<http://localhost:9191/200>
-<http://localhost:9191/200x100>
-<http://localhost:9191/200x100/eee>
-<http://localhost:9191/200x100/369/fff>
-<http://localhost:9191/200x100/369/fff?text=hello%20world!>
-<http://localhost:9191/?text=hello%20world!>
-...
-```
+> <http://localhost:9191/200>
+> <http://localhost:9191/200x100>
+> <http://localhost:9191/200x100/eee>
+> <http://localhost:9191/200x100/369/fff>
+> <http://localhost:9191/200x100/369/fff?text=hello%20world!>
+> <http://localhost:9191/?text=hello%20world!>
+> ...
+
 
 
 
