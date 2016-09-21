@@ -46,12 +46,12 @@ http://localhost:9191/[size][/bgcolor][/color][?text=test]
 
 ### Examples
 
-> <http://localhost:9191/200>
-> <http://localhost:9191/200x100>
-> <http://localhost:9191/200x100/eee>
-> <http://localhost:9191/200x100/369/fff>
-> <http://localhost:9191/200x100/369/fff?text=hello%20world!>
-> <http://localhost:9191/?text=hello%20world!>
+> <http://localhost:9191/200>  
+> <http://localhost:9191/200x100>  
+> <http://localhost:9191/200x100/eee>  
+> <http://localhost:9191/200x100/369/fff>  
+> <http://localhost:9191/200x100/369/fff?text=hello%20world!>  
+> <http://localhost:9191/?text=hello%20world!>  
 > ...
 
 
