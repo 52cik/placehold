@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>placehold</title>
+  <style>
+  *{margin:0;padding:0}
+  header{margin-bottom:20px;padding:62px;background-color:#f4645f;color:#fff;text-align:center}
+  header h1{font-size:3em}
+  h2{font-size:1.7em;line-height:2}
+  article{overflow:hidden;margin:auto;margin-bottom:20px;width:980px}
+  footer{padding:40px 0 20px 0;background-color:#111;color:#666;text-align:center;font-size:12px}
+  .info{float:left;width:470px}
+  .case{float:right;width:490px;font-size:0}
+  .demo{margin:1em 0;padding:1.5em 1em;border:1px dotted #aaa;line-height:1.2}
+  a{color:#428bca;text-decoration:none}
+  a:focus,a:hover{color:#2a6496;text-decoration:underline}
+  a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Welcome to PLACEHOLD!</h1>
+  <h2>A quick and simple image placeholder service.</h3>
+</header>
+
+<article>
+  <div class="info">
+    <p>How does it work? Just put your image size after our URL and you'll get a placeholder.</p>
+    <div class="demo">
+      Like this: <a href="http://localhost:9191/490x160" target="_blank">http://localhost:9191/490x160</a>
+    </div>
+
+    <p>You can also use it in your code, like this:</p>
+    <div class="demo">
+      &lt;img src="http://localhost:9191/490x160"&gt;
+    </div>
+
+    <p>You can also set the color as well as the text:</p>
+    <div class="demo">
+      bgcolor: <a href="http://localhost:9191/300/ddd" target="_blank">http://localhost:9191/300/ddd</a>
+      <br>
+      color: <a href="http://localhost:9191/300/ddd/fff" target="_blank">http://localhost:9191/300/ddd/fff</a>
+      <br>
+      text: <a href="http://localhost:9191/300/ddd/fff?text=hello world" target="_blank">http://localhost:9191/300/ddd/fff?text=hello world</a>
+    </div>
+
+  </div>
+  <div class="case">
+    <img src="/490x160">
+    <img src="/280x120/360/fff" style="margin:10px 0">
+    <img src="/200x120/336699/ffcc99" style="margin:10px 0 10px 10px">
+    <img src="/490x90/c99/fff?text=hello world">
+  </div>
+</article>
+
+<footer>
+  node-placehold@1.0.2 MIT
+</footer>
+</body>
+</html>
