@@ -1,12 +1,13 @@
 {
   "name": "placehold",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node placeholder image generator",
   "main": "index.js",
   "bin": {
     "placehold": "bin/placehold"
   },
   "scripts": {
+    "start": "nodemon bin/placehold",
     "test": "mocha --check-leaks --reporter spec --bail",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot"
   },
