@@ -6,7 +6,7 @@ var RE_FORMAT = /^\/(\d+)(?:x(\d+))?(?:\/([\da-f]{6}|[\da-f]{3}))?(?:\/([\da-f]{
 
 module.exports = function (req, res) {
   if (req.url === '/') {
-    fs.readFile('index.html', function(err, data) {
+    fs.readFile(__dirname + '/index.html', function(err, data) {
       if (err) throw err;
 
       var html = data.toString().replace(/localhost:9191/g, req.headers.host);
