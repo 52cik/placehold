@@ -16,11 +16,11 @@ var app = http.createServer(placehold);
 // process.env.PORT = 8899;
 
 describe('placehold test:', function () {
-  it('should default 100x100px.', function (done) {
+  it('should default page.', function (done) {
     request(app)
       .get('/')
-      .expect('Content-Type', /svg/)
-      .expect(200, /100x100/, done);
+      .expect('Content-Type', /html/)
+      .expect(200, /Welcome to placehold/i, done);
   });
 
   it('should 200x200px.', function (done) {
