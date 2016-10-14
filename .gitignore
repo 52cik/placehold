@@ -13,5 +13,8 @@ Desktop.ini
 # webstorm
 .idea
 
+# vscode
+.vscode
+
 # Coverage directory
 coverage
