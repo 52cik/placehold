@@ -1,6 +1,6 @@
 {
   "name": "placehold",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "node placeholder image generator",
   "main": "index.js",
   "bin": {
